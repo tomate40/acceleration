@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body onload="startGame()">
+  
+  <div class="c">
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
+  </div>
+  <div class="slide">
+    <div class="slidecontainer">
+      <input type="range" min="-5" max="5" value="0" class="slider" id="R-Vitesse">
+      <p>Vitesse: <span id="V"></span></p>
+    </div>
+    <div class="slidecontainer">
+      <input type="range" min="-5" max="5" value="0" class="slider" id="R-Acceleration">
+      <p>Acceleration: <span id="A"></span></p>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+  
+</body>
+</html>
